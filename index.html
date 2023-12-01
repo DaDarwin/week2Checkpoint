@@ -10,29 +10,29 @@
 </head>
 <body>
 
-    <main>
-        <main class="container-fluid">
-            <section class="row">
-                <div class="col-12">Rock</div>
-                <div class="col-12"><img src="" alt="" onclick="collectRocks()"></div>
+    <main class="bg-dark text-light">
+        <main class="container-fluid text-center">
+            <section class="row align-items-center flex-column">
+                <h1 class="col-4">Rock</h1>
+                <div class="col-4"><img src="rock.png" alt="rock" onclick="collectRocks()"></div>
             </section>
             <section class="container">
-                <div class="row">
-                    <span class="col-4" id="clickRocks"></span>
-                    <span class="col-4" id="rockAmount"></span>
-                    <span class="col-4" id="autoRocks"></span>
+                <div class="row justify-content-center align-items-baseline">
+                    <h3 class="col-2" id="clickRocks">RPC: 1</h3>
+                    <h2 class="col-2" id="rockAmount">Rocks: 0</h2>
+                    <h3 class="col-2" id="autoRocks">RPS: 0</h3>
                 </div>
 
                 <div class="row">
                     <div class="col-6">
-                        <h5 id="Pick">
-                            <span class=""></span>
-                            <span class=""></span>
-                            <span class=""></span>
-                            <button class="" onclick="addUpgrade(0,'Pick')">Pick</button>
-                        </h5>
+                        <div id="Pick"class="row justify-content-center">
+                            <h4 class="col-12"></h4>
+                            <h5 class="col-6"></h5>
+                            <h5 class="col-6"></h5>
+                            <button class="col-6 btn-outline-info" onclick="addUpgrade('click','Pick')">Pick</button>
+                        </div>
                     </div>
-                    <div class="col-6">TotalUpgrades</div>
+                    <div class="col-6"></div>
                 </div>
 
             </section>
