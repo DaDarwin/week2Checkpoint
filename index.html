@@ -14,17 +14,24 @@
         <main class="container-fluid">
             <section class="row">
                 <div class="col-12">Rock</div>
-                <div class="col-12"><img src="" alt=""></div>
+                <div class="col-12"><img src="" alt="" onclick="collectRocks()"></div>
             </section>
             <section class="container">
                 <div class="row">
                     <span class="col-4" id="clickRocks"></span>
-                    <span class="col-4" id="rockAmounts"></span>
+                    <span class="col-4" id="rockAmount"></span>
                     <span class="col-4" id="autoRocks"></span>
                 </div>
 
                 <div class="row">
-                    <div class="col-6">Upgrades</div>
+                    <div class="col-6">
+                        <h5 id="Pick">
+                            <span class=""></span>
+                            <span class=""></span>
+                            <span class=""></span>
+                            <button class="" onclick="addUpgrade(0,'Pick')">Pick</button>
+                        </h5>
+                    </div>
                     <div class="col-6">TotalUpgrades</div>
                 </div>
 
