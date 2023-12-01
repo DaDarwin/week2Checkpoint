@@ -77,7 +77,7 @@ function drawUpgrade(upgrade){
     const powerELM = document.createElement('h5')
     powerELM.classList.add('col-6')
     const qtyELM = document.createElement('h5')
-    upgradeELM.classList.add('col-6')
+    qtyELM.classList.add('col-6')
     const priceELM = document.createElement('button')
     priceELM.classList.add('col-6 btn btn-outline-info')
     priceELM.onclick = addUpgrade(upgrade.name)
