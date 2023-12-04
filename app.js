@@ -113,10 +113,12 @@ function drawUpgrade(upgradeName){
     document.getElementById(upgrade.kind).append(upgradeELM)
 }
 
+let unusedUpgrades = upgrades
+
 function buyButtons(){
-    upgrades.filter(upgrade=> upgrade.qty == 0).forEach(upgrade =>{
+    unusedUpgrades.filter(upgrade=> upgrade.qty == 0).forEach(upgrade =>{
         console.log(upgrade)
-        if(rocks >= upgrade.price && document.getElementById(upgrade.name) == null){
+        if(rocks >= upgrade.price){
             console.log(upgrade.name)
             const buyElm = document.createElement('button')
             buyElm.id = upgrade.name
@@ -125,6 +127,8 @@ function buyButtons(){
             buyElm.classList.add('col-12')
             console.log(buyElm)
             document.getElementById(upgrade.kind).append(buyElm)
+            unusedUpgrades.splice(upgrade,1)
+            console.log(unusedUpgrades)
         }
     })
 }
