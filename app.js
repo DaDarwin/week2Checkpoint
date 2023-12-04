@@ -41,8 +41,8 @@ let upgrades = [{
 
 
 function findUpgrade(upgradeName){
-        let upgrade = upgrades.find(upgrade => upgrade.name == upgradeName)
-        return upgrade
+        let changedUpgrade = upgrades.find(upgrade => upgrade.name == upgradeName)
+        return changedUpgrade
 
 }
 function addUpgrade(upgradeName){
@@ -82,6 +82,7 @@ function updateDom(upgrade){
 }}
 
 function drawUpgrade(upgradeName){
+    debugger
     let upgrade = findUpgrade(upgradeName)
 
     document.getElementById(upgrade.name).remove()
@@ -113,7 +114,7 @@ function drawUpgrade(upgradeName){
     document.getElementById(upgrade.kind).append(upgradeELM)
 }
 
-let unusedUpgrades = upgrades
+let unusedUpgrades = upgrades.concat()
 
 function buyButtons(){
     unusedUpgrades.filter(upgrade=> upgrade.qty == 0).forEach(upgrade =>{
