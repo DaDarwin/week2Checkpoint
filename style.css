@@ -3,3 +3,7 @@ img{
     aspect-ratio: 1/1;
     width: 75%;
 }
+
+main{
+    height: 100vh;
+}
