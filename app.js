@@ -82,7 +82,6 @@ function updateDom(upgrade){
 }}
 
 function drawUpgrade(upgradeName){
-    debugger
     let upgrade = findUpgrade(upgradeName)
 
     document.getElementById(upgrade.name).remove()
